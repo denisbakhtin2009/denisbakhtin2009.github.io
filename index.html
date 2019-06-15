@@ -3,18 +3,26 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Страница имени Ба***на Дениса.</title>
+	<title>Страница имени Ба*на Дениса.</title>
 </head>
 
 
 <body>
 <h1>Привет, как дела? Это страница Дениса. Тебе понравилось? Желаю всего самого наилучшего пока!!!</h1>
 <h1> Подпишись на меня в <a href="https://www.instagram.com/denis.programmist/?hl=ru" title="Страница Дениса Програмиста: instagram">Инстаграм</a></h1>
-<p>Автор: Ба***н Денис.</p>
+<p>Автор: Ба*н Денис.</p>
 <a href="http://comicsia.ru/collections/xkcd" title="xkcd: комиксы для гиков!">Нажмите сюда</a>, чтобы почитать отличные комиксы.</p>
+<a href="viselitca.HTML" title="Виселица!">Нажмите сюда</a>, чтобы поиграть в виселицу!</p>
     <script>
-	var message = "Привет мир!";
-	console.log(message);
+	var name = prompt("Как вас зовут?");
+    alert("Привет, " + name);
+	var likesCats = confirm("Тебе нравявятся кошки?");
+if (likesCats) {
+  alert("Ты класная кошка!");
+} else {
+  alert("Что ж, не проблема. Всё равно ты молодец!");
+}
+alert("JavaScript это здорово!");
     </script>
 </body>
 </html>

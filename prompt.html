@@ -79,5 +79,33 @@ alert("JavaScript это здорово!");
 
 
 </script>
+
+<script>
+	
+	<p>Секундомер: <output id="result"></output></p>
+<button onclick="startWorker()">Старт секундомера</button> 
+<button onclick="stopWorker()">Стоп секундомера</button>
+
+<script>
+var w;
+
+function startWorker(){
+   if(typeof(Worker) !== "undefined"){
+        if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+   }else{
+       document.getElementById("result").innerHTML = "К сожалению! Нет поддержки Веб работника";
+   }
+}
+
+function stopWorker(){ 
+   w.terminate();
+    w = undefined;
+}
+	</script>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfp7Ldm04SV32NDWN1REKZytbAInH-U3hk6tZMSFkTDJY4QTg/viewform?embedded=true" width="640" height="863" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe></body>
 </html>

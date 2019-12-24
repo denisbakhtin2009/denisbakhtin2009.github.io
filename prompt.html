@@ -42,21 +42,14 @@
 	<audio controls>
 		<source src="Axel_F.mp3" type="audio/mpeg">
 	</audio>
-<h1 title="Xiaomi заяц" style="color:red;">Привет, как дела? Это страница фаната <mark> Xiaomi </mark>. Тебе понраилось? Желаю всего самого наилучшего!</h1>
-<img src="radio_and_music.jpg" alt="Радио и музыка" usemap="#radio_and_musicmap" style="float:right;"/> 
-
-<map name="radio_and_musicmap">
-	<area shape="rect" coords="93,68,392,339" alt="Радио" href="https://fmplay.ru"/>
-	<area shape="rect" coords="169,345,333,379" alt="Музыка" href="https://music.yandex.ru/users/kachok2009bahtin/playlists/1002"/>
-</map>
-<body style="background-image:url('2.jpg');">
+<h1 title="Xiaomi заяц" style="color:red;">Привет, как дела? Это страница фаната <mark> Xiaomi </mark>. Здесь вы найдёте всю полезную информацию о компании. (Разработчику 10 лет)</h1>
 <h1 title="Разработчик" style="color:red;"> Подпишись на меня в <a href="https://www.instagram.com/kachok2009/" title="Страница Дениса: instagram" style="color:red;">Инстаграм</a></h1>
 <p title="Разработчик" style="color:red;">Автор: Ба*н Денис.</p>
 <a href="http://comicsia.ru/collections/xkcd" title="xkcd: комиксы для гиков!"  title="Разработчик" style="color:red;">Нажмите сюда</a>, чтобы почитать отличные комиксы.</p>
 <a href="viselitca.HTML" title="Виселица!" style="color:red;"  title="Разработчик" style="color:red;">Нажмите сюда</a>, чтобы поиграть в виселицу!</p>
 <a href="https://music.yandex.ru/users/kachok2009bahtin/playlists/1002" title="Хорошая музыка😎" title="DJ" style="color:red;">Нажмите сюда</a>, чтобы послушать музыку!🎶</p>   
-<a href="https://fmplay.ru/" title="ТОПИ 100 И 5!!!♨⛱🔥" title="DJ" style="color:red;">Нажмите сюда</a>, чтобы послушть радио!📻</p> 
 <a href="https://www.facebook.com/profile.php?id=100040653622638" title="Акк Разработчика в facebook" style="color:red;">Нажмите сюда</a>, чтобы подписатся на меня в Facebok!!!</p>
+<a href="https://vk.com/id573943793" title="Акк Разработчика в VK" style="color:red;">Нажмите сюда</a>, чтобы подписатся на меня в VK!!!</p>
 <!-- Если у тебя есть акк в сот сетях то немедленно публиковать на этом сайте -->
 <!-- Все ссылки помеченые красным должны быть сделаны мной -->  
 
@@ -79,31 +72,6 @@ alert("JavaScript это здорово!");
 
 
 </script>
-	
-	<p>Секундомер: <output id="result"></output></p>
-<button onclick="startWorker()">Старт секундомера</button> 
-<button onclick="stopWorker()">Стоп секундомера</button>
 
-<script>
-var w;
-
-function startWorker(){
-   if(typeof(Worker) !== "undefined"){
-        if(typeof(w) == "undefined") {
-            w = new Worker("demo_workers.js");
-        }
-        w.onmessage = function(event) {
-            document.getElementById("result").innerHTML = event.data;
-        };
-   }else{
-       document.getElementById("result").innerHTML = "К сожалению! Нет поддержки Веб работника";
-   }
-}
-
-function stopWorker(){ 
-   w.terminate();
-    w = undefined;
-}
-	</script>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfp7Ldm04SV32NDWN1REKZytbAInH-U3hk6tZMSFkTDJY4QTg/viewform?embedded=true" width="640" height="863" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe></body>
 </html>
